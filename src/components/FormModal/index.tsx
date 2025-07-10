@@ -5,7 +5,6 @@ import { ITransaction } from "@/types/transaction";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useEffect } from "react";
-// Validação do formulário
 
 export interface IFormModalProps {
   formTitle: string;

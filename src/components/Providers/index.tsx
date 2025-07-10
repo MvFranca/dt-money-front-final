@@ -7,7 +7,6 @@ interface IProvidersProps {
     children: ReactNode;
 }
 export function Providers({ children}: IProvidersProps) {
-    //const [queryClient] = useState(() => new QueryClient());
     return (
         <QueryClientProvider client={queryClient}>
             {children}

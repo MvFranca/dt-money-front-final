@@ -14,10 +14,12 @@ const Create = () => {
   })
 }
 
-const ListAll = () => {
-  return useQuery({ queryKey: [QUERY_KEY], queryFn: getTransactions})
-}
-
+const ListAll = (skip: number, take: number) => {
+  return useQuery({
+    queryKey: [QUERY_KEY, skip, take],
+    queryFn: () => getTransactions(skip, take),
+  });
+};
 const Delete = () => {
   const queryClient = useQueryClient()
 

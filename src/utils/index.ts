@@ -3,7 +3,6 @@ export const formatDate = (date: Date) => {
     return date.toLocaleDateString(undefined, options);
 }
 
-// Função para formatar números como valores monetários
 export const formatCurrency = (value: number) => {
     return new Intl.NumberFormat('pt-BR', 
         { 
